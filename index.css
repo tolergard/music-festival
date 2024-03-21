@@ -1,0 +1,433 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-family: "Nanum Pen Script", cursive, "Courier New", Courier, monospace;
+}
+
+/* Header och navbar */
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(242, 159, 5);
+}
+
+header {
+  width: 100vw;
+  background-color: rgb(3, 136, 166);
+  text-align: center;
+}
+
+.header-logo {
+  max-width: 80%;
+  padding: 2%;
+}
+
+.header-logo:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0.5rem 0 1rem;
+}
+
+/* Jag läste på om min-max-storlekar på fonts här: https://css-tricks.com/how-do-you-do-max-font-size-in-css/ */
+
+.link {
+  background-color: rgb(242, 159, 5);
+  color: #141414;
+  text-decoration: none;
+  font-size: max(2vw, 20px);
+  padding: 0 10px 0;
+  border-radius: 10px;
+}
+
+.link:hover {
+  background-color: rgb(232, 190, 113);
+}
+
+/* Startsidan */
+
+.start {
+  background-color: rgb(242, 159, 5);
+  min-height: 70vh;
+  background-image: url(images/birdiebird/littlebirdie.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+}
+
+.welcome-page {
+  margin: 0 6%;
+}
+
+h1 {
+  font-family: "Nanum Pen Script", cursive, "Courier New", Courier, monospace;
+  font-size: max(5vw, 40px);
+  padding-top: 0.3em;
+}
+
+h2 {
+  font-family: "Nanum Pen Script", cursive, "Courier New", Courier, monospace;
+  font-size: max(3vw, 35px);
+}
+
+#slogan {
+  font-family: "Nanum Pen Script", cursive, "Courier New", Courier, monospace;
+  font-size: max(1vw, 20px);
+}
+
+p {
+  font-family: "Roboto", sans-serif, "Courier New", Courier, monospace;
+  line-height: 150%;
+  font-size: max(0.5vw, 18px);
+}
+
+/* Bilder och artikel */
+
+.container {
+  padding: 3rem 0;
+  background-color: rgb(242, 159, 5);
+  display: flex;
+  flex-direction: column;
+}
+
+.container:nth-child(2n) {
+  background-color: rgb(3, 136, 166);
+}
+
+.container-content {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+.article {
+  margin: 0 6%;
+}
+
+.picture-container {
+  min-width: 55%;
+  min-height: auto;
+}
+
+.picture {
+  width: 100%;
+  object-fit: cover;
+  padding: 6%;
+}
+
+.read-more-orange {
+  background-color: rgb(242, 159, 5);
+  color: #000000;
+  border: 0;
+  outline: none;
+  margin: 1rem;
+  padding: 9px 25px;
+  border-radius: 50px;
+  font-size: max(1vw, 19px);
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.read-more-orange:hover {
+  background-color: rgb(232, 190, 113);
+}
+
+.read-more-blue {
+  background-color: rgb(3, 136, 166);
+  color: #000000;
+  border: 0;
+  outline: none;
+  margin: 1rem;
+  padding: 9px 25px;
+  border-radius: 50px;
+  font-size: max(1vw, 19px);
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.read-more-blue:hover {
+  background-color: rgb(91, 185, 206);
+}
+
+.read-more-button {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Subscribe */
+
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: auto;
+  min-height: 80vh;
+  background-color: rgb(242, 159, 5);
+}
+
+.subscribe {
+  margin: 0 6%;
+  padding: 2% 0;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 6%;
+}
+
+.subscribe-form input {
+  background: #dddddd;
+  color: #060c22;
+  border: 0;
+  outline: none;
+  margin: 1rem 0 0;
+  padding: 9px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  text-align: center;
+  width: 300px;
+}
+
+.subscribe-form button {
+  background-color: rgb(3, 136, 166);
+  color: #000000;
+  border: 0;
+  outline: none;
+  margin: 1rem;
+  padding: 9px 25px;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Nanum Pen Script", cursive, "Courier New", Courier, monospace;
+}
+
+.subscribe-form button:hover {
+  background-color: rgb(91, 185, 206);
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding-top: 1rem;
+}
+
+/* Footer */
+
+footer {
+  min-width: auto;
+  display: block;
+  text-align: center;
+  min-height: 20vh;
+  background-color: rgb(3, 136, 166);
+}
+
+.icons {
+  font-size: 3em;
+  padding: 2rem 0 1rem;
+}
+
+.fa {
+  color: rgb(242, 159, 5);
+  text-decoration: none;
+}
+
+.fa:hover {
+  color: rgb(232, 190, 113);
+}
+
+.footer-p {
+  color: #000000;
+  font-size: 12px;
+}
+
+/* Lineup page */
+
+.lineup-container {
+  max-width: 100vw;
+  padding: 2rem 0;
+  background-color: rgb(242, 159, 5);
+}
+
+.h1-page {
+  text-align: center;
+  padding: 0;
+  margin: 0 6%;
+}
+
+.lineup-grid {
+  margin-inline: auto;
+  max-width: 80%;
+  display: grid;
+  justify-content: center;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.band-card {
+  background-color: rgb(3, 136, 166);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+/* Jag ville ha kvadratiska bilder utan att behöva beskära dem och googlade runt lite på detta och hittade till slut 'aspect-ratio' och läste på om det här: https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio */
+.band-picture {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.band-name {
+  font-family: "Nanum Pen Script", cursive, "Courier New", Courier, monospace;
+  font-size: max(2rem, 20px);
+}
+
+.page-slogan {
+  font-family: "Nanum Pen Script", cursive, "Courier New", Courier, monospace;
+  font-size: max(1vw, 20px);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+/* NYA SIDORS CSS */
+.new-page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(242, 159, 5);
+  min-height: 70vh;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+}
+
+.new-page-text {
+  width: 40%;
+  padding: 2rem;
+}
+
+.new-page-text p {
+  font-size: 18px;
+  line-height: 170%;
+}
+
+.new-page-img {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6rem;
+}
+
+.span-bold {
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+}
+
+/* Media Queries */
+
+@media (min-width: 41em) {
+  .start {
+    background-position: right 10% bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .split {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .odd:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  .container {
+    justify-content: center;
+    min-height: 60vh;
+  }
+  .subscribe-container {
+    min-height: 60vh;
+  }
+}
+
+@media (min-width: 60em) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .navbar-links {
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-right: 1rem;
+  }
+  .navbar-links li {
+    margin-right: 1.5rem;
+  }
+  .navbar-links li:last-child {
+    margin: 0;
+  }
+  .header-logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 40%;
+  }
+  header {
+    text-align: unset;
+  }
+  .container {
+    min-height: 80vh;
+  }
+  .subscribe-container {
+    min-height: 80vh;
+  }
+  .picture {
+    padding: 0;
+  }
+}
+
+@media (min-width: 667px) {
+  .lineup-grid {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+}
+
+@media (min-width: 1210px) {
+  .lineup-grid {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+}
